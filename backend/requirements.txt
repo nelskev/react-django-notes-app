@@ -9,5 +9,6 @@ sqlparse
 psycopg2-binary
 python-dotenv
 gunicorn
+uvicorn
 dj-database-url
 whitenoise[brotli]
