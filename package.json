@@ -1,7 +1,9 @@
 {
     "scripts": {
       "build": "npm install --prefix frontend && npm run build --prefix frontend",
-      "start": "npm run start --prefix frontend"
+      "start": "npm run start --prefix frontend",
+      "pip-install": "python3 -m pip install -r backend/requirements.txt && python3 backend/manage.py makemigrations && python3 backend/manage.py migrate",
+      "run-server": "python backend/manage.py runserver"
     },
     "dependencies": {
       "serve": "^14.2.4"
